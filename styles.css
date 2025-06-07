@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@300;400;700&display=swap');
+
+:root{
+    --blue1:#20c4da;
+    --blue2:#0c6599;
+    --gray:#ffffff80;
+    --gray2:#f7d9d990;
+    --blue3: #016696;
+    --black2:#30553b;
+    --shadow: 0 8px 8px;
+    --color_shadow:#1a43c933;
+}
+
+
+
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: "Roboto", sans-serif;
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--blue3);
+}
+
+.logo_name{
+    font-size: 24px;
+    font-weight: bold;
+    color:#fffdfde5
+}
+
+.point{
+    color: #a4a6aff6;
+}
+
+.links{
+    display: flex;
+    gap: 15px;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    padding: 10px
+}
+
+link:hover{
+    color: #f3f7ebe7;
+}
+
+.link--active{
+    font-weight: bold;
+    color: #e8f806ea;
+}
+
+.my_name{
+    color: #ffffff;
+}
+
+.hero_main{
+    background: #016696;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.dog{
+    object-fit: cover;
+    height: calc(100vh - 70px)
+}
+
+.title{
+    background: #016696;
+    font-size: 56px;
+    font-weight: 300;
+    color:#ececf8ec;
+}
+
+.title_active{
+    color:#ececf8ec;
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color:#fff;
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy_active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: #f3f4f7dc;
+    text-decoration: none;
+    color: var(--blue3);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 20px;
+}
+
+.catalog{
+    background: #e9ecee;
+    display: inline-block;
+}
+
+.copy_catalog{
+    font-size: 24px;
+    color: var(--blue3);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.subtitle{
+    display: flex;
+    font-size: 40pz;
+    color: var(--blue3);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.copy_section{
+    display: inherit;
+    color: #f6f6f8e8;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+
+.container_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20PX;
+}
+
+.card{
+    width: 30%;
+    padding: 2px 20px;
+    overflow: hidden;
+    background:var(--blue3);
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card_img{
+    text-align: center;
+    width: 98%;
+    height: 300px;
+    object-fit: center;
+    border-radius: 20px;
+}
+
+.cards_text{
+    text-align: justify;
+    width: 90%;
+    margin:0 auto;
+}
+
+.card_list{
+    color: #fff;
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+}
+
+.card_title{
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.card_copy{
+    color: #f5f2f2;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.card_button{
+    display: inline-block;
+    background-color: #fbfeff;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--blue3);
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.card_date{
+    color:#edeef1fa;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container_bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.projects_container{
+    background: #e9ecee;
+}
+
+.whoweare{
+    background: var(--blue3);
+    display:inline-flex;
+}
+
+.whoweare_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.whoweare_card{
+    width: 30%;
+    height: 500px;
+    background: #fff;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20;
+    text-align: center;
+}
+
+
+.whoweare_img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.whoweare_copy{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: #016696;
+    color: #f0f2f7e7;
+    margin: 0 auto;
+    border-radius: 20PX;
+    box-shadow: var(--shadow)var(--color_shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+.whoweare_logo{
+    font-size: 60px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.whoweare_name{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.whoweare_position{
+    color: #f7f8fae7;
+}
+
+.whoweare_text{
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: #ebedf1e7;
+}
+
+.vision_card{
+    background-color: var(--blue3);
+    width: 30%;
+    height: 500px;
+    position: inherit;
+    border-radius: 20px;
+}
+
+.mision_card{
+    background-color: var(--blue3);
+    width: 30%;
+    height: 500px;
+    position: inherit;
+    border-radius: 20px;
+    padding-right: 20px;
+}
+
+.vision_text{
+    color: #e9ecee;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mision_text{
+    color: #e9ecee;
+    text-align: justify;
+    padding: 20px;
+}
+
+.footer{
+    color: #016696;
+    background-color: #016696;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.item__contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.item__contact i {
+    font-size: 24px;
+    color: #25D366;
+}
+
+.contact__title {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.contact_umg{
+    background: var(--blue3);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.itemumg_contact{
+    width: 25%;
+    text-align: center;
+    background-color: #016696;
+    display: inherit;
+}
+
+.lema_umg{
+    text-align: center;
+    color: #016696;
+}
+
+@media screen and (max-width:900px){
+    .dog{
+        width: 600px;
+        height: auto;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .copy{
+        font-size: 22px;
+    }
+
+    .cta{
+        padding: 15px 22px;
+    }
+
+    .container_cards{
+        justify-content: space-evenly;
+    }
+
+    .services .card{
+        width: 45%;
+    }
+    
+    .background{
+        width: 52%;
+    }
+
+    .card{
+        width: 42%;
+    }
+
+    .whoweare_container{
+        justify-content: space-evenly;
+    }
+
+    .whoweare_card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    main .container,
+    footer .container{
+        padding: 60px 0;
+    }
+
+    .nav_container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .nav_hero{
+        height: auto;
+    }
+
+    .logo{
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .links{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .link{
+        padding: 7px 10px;
+    }
+
+    .hero_main{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .hero_textos{
+        width: 100%;
+        text-align: center;
+    }
+
+    .dog{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+
+    .subtitle{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .copy_section{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .servies .card{
+        width: 80%;
+    }
+
+    .container_bg{
+        justify-content: space-evenly;
+    }
+
+    .card_title{
+        font-size: 35px;
+    }
+
+    .card_button{
+        width: 100%;
+    }
+
+    .background{
+        width: 65%;
+        margin-bottom: 40px;
+    }
+
+    .whoweare_card{
+        width: 2opx;
+    }
+
+    .whoweare_name{
+        font-size: 20px;
+    }
+
+    .container--modifier{
+        width: 80%;
+    }
+
+    .item_contact{
+     width: 100%;
+     padding: 30px 0;   
+    } 
+}
+
+@media screen and (max-width) {
+    .dog{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .services .card{
+        width: 95%;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .background{
+        width: 95%;
+    }
+    
+    .whoweare_card{
+        width: 95%;
+    }
+}
+
